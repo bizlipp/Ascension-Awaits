@@ -1,0 +1,50 @@
+{
+  "start": {
+    "text": "Loading Nettie's story...",
+    "choices": []
+  },
+  "look_around": {
+    "text": "You see a path leading deeper into the forest and a cabin with smoke coming out of the chimney.",
+    "choices": [
+      { "text": "Follow the path", "next": "follow_path" },
+      { "text": "Go to the cabin", "next": "go_to_cabin" }
+    ]
+  },
+  "stay_still": {
+    "text": "You stay still, but the cold begins to seep into your bones. You might not survive long like this.",
+    "choices": [
+      { "text": "Look around", "next": "look_around" }
+    ]
+  },
+  "follow_path": {
+    "text": "You follow the path and encounter a wild animal blocking your way.",
+    "choices": [
+      { "text": "Run away", "next": "start" },
+      { "text": "Try to scare it off", "next": "scare_off" }
+    ]
+  },
+  "go_to_cabin": {
+    "text": "You knock on the cabin door, and an old man answers. He looks friendly and invites you inside.",
+    "choices": [
+      { "text": "Enter the cabin", "next": "cabin_inside" },
+      { "text": "Decline and leave", "next": "follow_path" }
+    ]
+  },
+  "scare_off": {
+    "text": "You wave your arms and yell. The animal flees, and you continue on your journey.",
+    "choices": [
+      { "text": "Keep moving", "next": "follow_path" }
+    ]
+  },
+  "cabin_inside": {
+    "text": "Inside the cabin, you find warmth and a hot meal. The old man tells you stories of the forest.",
+    "choices": [
+      { "text": "Thank him and rest", "next": "end_good" },
+      { "text": "Leave after eating", "next": "follow_path" }
+    ]
+  },
+  "end_good": {
+    "text": "You rest and regain your strength, ready to face the challenges ahead. The End.",
+    "choices": []
+  }
+} 

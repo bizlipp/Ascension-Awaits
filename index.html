@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,">
+  <title>Ascension Awaits</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Splash Screen -->
+  <div id="splash-screen" class="screen active">
+    <div class="splash-content">
+      <h1>Ascension Awaits</h1>
+      <div class="splash-animation"></div>
+      <p>Click anywhere to begin</p>
+    </div>
+  </div>
+
+  <!-- Main Menu -->
+  <div id="main-menu" class="screen hidden">
+    <h1>Ascension Awaits</h1>
+    <div class="menu-options">
+      <button id="new-game" class="menu-button">New Game</button>
+      <button id="continue-game" class="menu-button">Continue</button>
+      <button id="settings" class="menu-button">Settings</button>
+    </div>
+  </div>
+
+  <!-- Character Selection Screen -->
+  <div id="character-select" class="screen hidden">
+    <h2>Choose Your Character</h2>
+    <div class="character-select-container">
+      <div class="character-cards">
+        <div class="character-card" data-character="billy">
+          <div class="character-portrait">
+            <img src="/assets/images/characters/billy.png" alt="Billy">
+          </div>
+          <div class="character-info">
+            <h3>Billy</h3>
+            <p class="character-desc">A determined programmer seeking digital enlightenment.</p>
+          </div>
+        </div>
+        <div class="character-card" data-character="nettie">
+          <div class="character-portrait">
+            <img src="/assets/images/characters/nettie.png" alt="Nettie">
+          </div>
+          <div class="character-info">
+            <h3>Nettie</h3>
+            <p class="character-desc">A mysterious guide through the digital realm.</p>
+          </div>
+        </div>
+      </div>
+      <div class="character-select-buttons">
+        <button id="back-to-menu" class="menu-button">Back</button>
+        <button id="start-journey" class="menu-button" disabled>Start Journey</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html> 
